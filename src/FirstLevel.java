@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class FirstLevel {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please, enter task number");
+        System.out.println("Please, enter task number 1-3");
         int task = scanner.nextInt();
         switch (task) {
             case 1, 2:
