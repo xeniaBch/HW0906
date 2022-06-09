@@ -91,13 +91,13 @@ public class FirstLevel {
         if (count > 0) {
             switch (count){
                 case 1:
-                    System.out.println("Your purchase amount is " + count*price);
+                    System.out.println("Your purchase amount is " + count*price + "$");
                     break;
                 case 2:
-                    System.out.println("Your purchase amount is " + count*price*0.9);
+                    System.out.println("Your purchase amount is " + count*price*0.9 + "$");
                     break;
                 default:
-                    System.out.println("Your purchase amount is " + count*price*0.85);
+                    System.out.println("Your purchase amount is " + count*price*0.85 + "$");
             }
 
         } else {
