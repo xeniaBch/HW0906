@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class FirstLevel {
@@ -88,16 +89,17 @@ public class FirstLevel {
 
     private static void countPurchase(int count) {
         double price = 89.99;
+        DecimalFormat f = new DecimalFormat("##.00");
         if (count > 0) {
             switch (count){
                 case 1:
-                    System.out.println("Your purchase amount is " + count*price + "$");
+                    System.out.println("Your purchase amount is " + f.format(count*price) + "$");
                     break;
                 case 2:
-                    System.out.println("Your purchase amount is " + count*price*0.9 + "$");
+                    System.out.println("Your purchase amount is " + f.format(count*price*0.9) + "$");
                     break;
                 default:
-                    System.out.println("Your purchase amount is " + count*price*0.85 + "$");
+                    System.out.println("Your purchase amount is " + f.format(count*price*0.85) + "$");
             }
 
         } else {
